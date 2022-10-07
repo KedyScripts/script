@@ -1,0 +1,38 @@
+while wait() do
+local ohString1 = "Supermarket Egg"
+local ohString2 = "tripleEgg"
+
+workspace.__THINGS.__REMOTES.buyEgg:InvokeServer(ohString1, ohString2)
+
+local ohInstance1 = game:GetService("Players").LocalPlayer.PlayerGui
+
+workspace.__THINGS.__REMOTES.confirmSellPetToMerchant:InvokeServer(ohInstance1)
+
+local ohString1 = "Butter"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Sugar"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Flour"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Rice"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Milk"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Egg"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohInstance1 = game:GetService("Players").LocalPlayer
+
+workspace.__THINGS.__REMOTES.rebirth:InvokeServer(ohInstance1)
+end
